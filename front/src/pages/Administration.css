@@ -1,0 +1,111 @@
+.administration-page {
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.administration-page h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  margin-top: 2rem; /* отступ сверху для заголовка */
+}
+
+.administration-page p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+.admin-buttons {
+  margin-top: 2rem;
+}
+
+.admin-buttons .btn {
+  margin-right: 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6ab399; 
+  border-color: #6ab399; 
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5a9a85; /* Темнее при наведении */
+  border-color: #5a9a85; 
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #1976D2; 
+  border-color: #1976D2; 
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #155a8a; 
+  border-color: #155a8a; 
+}
+
+/* Секция управления пользователями */
+.users-management {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Dashboard widgets */
+.dashboard-widgets {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.widget-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.widget-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.widget-card p {
+  margin: 0.25rem 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}

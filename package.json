@@ -1,53 +1,13 @@
 {
   "name": "students-assistant",
   "version": "1.0.0",
-  "description": "A web application to assist students, teachers, and administrators in managing educational resources and activities.",
-  "main": "src/index.js",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "keywords": [
-    "education",
-    "student",
-    "assistant",
-    "react"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1"
+    "start:back": "cd backend && uvicorn main:app --reload --port 3001",
+    "start:front": "cd front && npm start",
+    "start": "concurrently \"npm run start:back\" \"npm run start:front\""
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-react": "^7.27.0"
-  },
-  "homepage": "http://yourhomepage.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yourusername/students-assistant.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yourusername/students-assistant/issues"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "concurrently": "^7.6.0"
   }
-}
+} 
